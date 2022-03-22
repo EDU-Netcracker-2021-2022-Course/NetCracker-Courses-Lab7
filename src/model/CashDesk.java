@@ -10,7 +10,6 @@ public class CashDesk implements ICashDeskOperator {
     private static final double maxCashValue = 100000000;
     private double cashValue;
 
-
     public static CashDesk getInstance() {
         CashDesk localInstance = instance;
 
@@ -25,6 +24,10 @@ public class CashDesk implements ICashDeskOperator {
             }
         }
         return  localInstance;
+    }
+
+    public double getCashValue() {
+        return cashValue;
     }
 
     @Override
