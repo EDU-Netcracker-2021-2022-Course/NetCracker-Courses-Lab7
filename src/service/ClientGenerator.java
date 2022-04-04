@@ -15,7 +15,7 @@ public class ClientGenerator extends Thread {
         client.setOpCashValue(getRandomCashValue(minCashValue, maxCashValue));
         client.setOpDuration(getRandomOperationDuration(minDurationValue, maxDurationValue));
         client.setOpType(getRandomOperationType());
-        System.out.println("Новый клиент. Операция: " + client.getOpType() + ", размер кеша: " + client.getOpCashValue() + ", время обслуживания: " + client.getOpDuration());
+        System.out.println("\nНовый клиент. Операция: " + client.getOpType() + ", размер кеша: " + client.getOpCashValue() + ", время обслуживания: " + client.getOpDuration() + "\n");
         return client;
     }
 
